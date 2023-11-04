@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "name": "Smk Bina Nusantara Semarang",
+      "location": "Jl. Kemantren Raya No.5, RT.02/RW.04, Wonosari, Kec. Ngaliyan, Kota Semarang, Jawa Tengah 50186",
+      "jumlah_guru": "24",
+      "jumlah_siswa": "224",
+      "id": 1
+    },
+    {
+      "name": "Smk Bina Nusantara Mranggen",
+      "location": "Gg. Mondosari Tim. No.5, Mondosari, Batursari, Kec. Mranggen, Kabupaten Demak, Jawa Tengah 59567",
+      "jumlah_guru": "24",
+      "jumlah_siswa": "175",
+      "id": 2
+    },
+    {
+      "name": "Smp Negeri 1 Karangreja",
+      "location": "Karangreja, Purbalingga, Kabupaten Purbalingga, Jawa Tengah 53357",
+      "jumlah_guru": "35",
+      "jumlah_siswa": "334",
+      "id": 3
+    },
+    {
+      "name": "Sd Negeri 1 Karangreja",
+      "location": "Karangreja, Purbalingga, Kabupaten Purbalingga, Jawa Tengah 53357 ",
+      "jumlah_guru": "22",
+      "jumlah_siswa": "160",
+      "id": 4
+    },
+    {
+      "name": "3wrdeqw",
+      "location": "qwrqw",
+      "jumlah_guru": "23123",
+      "jumlah_siswa": "1231",
+      "id": 5
+    },
+    {
+      "name": "sadawd",
+      "location": "wqdwq",
+      "jumlah_guru": "214124",
+      "jumlah_siswa": "23124",
+      "id": 6
+    },
+    {
+      "name": "2324",
+      "location": "23123",
+      "jumlah_guru": "12312",
+      "jumlah_siswa": "213123",
+      "id": 7
+    }
+  ]
+}

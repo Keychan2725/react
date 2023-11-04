@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./page/home";
 import DataSekolah from "./page/data_sekolah";
 import Sidebar from "./component/sidebar";
+import  TambahData from "./page/tambah_data"
 import "./App.css";
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
             <Routes>
               <Route   exact path="/" element={<Home />}></Route>
               <Route exact path="/DataSekolah"  element={<DataSekolah />} ></Route>
+              <Route exact path="/TambahData"  element={<TambahData />} ></Route>
             </Routes>
           </div>
         </Router>
