@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "name": "Smk Bina Nusantara Semarang",
+      "name": "Smk Bina Nusantara Semaran",
       "location": "Jl. Kemantren Raya No.5, RT.02/RW.04, Wonosari, Kec. Ngaliyan, Kota Semarang, Jawa Tengah 50186",
       "jumlah_guru": "24",
       "jumlah_siswa": "224",
@@ -20,6 +20,13 @@
       "jumlah_guru": "24",
       "jumlah_siswa": "200",
       "id": 3
+    },
+    {
+      "name": "Smk Wisuda Karya",
+      "location": "Kudus",
+      "jumlah_guru": "9893",
+      "jumlah_siswa": "3883",
+      "id": 4
     }
   ]
 }

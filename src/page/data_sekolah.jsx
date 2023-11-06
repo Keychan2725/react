@@ -9,29 +9,29 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import axios from "axios";
-import { Button, Tooltip } from "@mui/material";
+import { Button, Tooltip, colors } from "@mui/material";
 import DeleteSweepIcon from "@mui/icons-material/DeleteSweep";
 import Swal from "sweetalert2";
 import Update from "@mui/icons-material/BorderColorSharp";
 import Tambah from '@mui/icons-material/PlaylistAddSharp';
 
 
+
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white,
+    backgroundColor: "white", // Mengatur latar belakang thead menjadi warna abu-abu
+    color: theme.palette.common.dark,
     borderRadius: "2%",
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
   },
-  // Hanya tombol "Aksi" yang menggunakan display: flex
   "&:last-child": {
     display: "flex",
     justifyContent: "center",
   },
   "@media (max-width: 600px)": {
-    display: "block", // Perubahan untuk tampilan responsif
+    display: "block",
     "&:last-child": {
       display: "flex",
       justifyContent: "center",
@@ -43,28 +43,37 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   "&:nth-of-type(odd)": {
     backgroundColor: theme.palette.action.hover,
   },
-  // hide last border
   "&:last-child td, &:last-child th": {
     border: 0,
   },
 }));
 
+
+ 
+
 const tableContainerStyle = {
-  minWidth: "100vh", // Lebar tabel 100% dari wadah
-  overflowX: "auto", // Tambahkan scroll horizontal jika konten terlalu lebar
+  minWidth: "100vh",
+  margin: "0 auto",
+  boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)", // Menambahkan bayangan
 };
 
 const tableStyle = {
-  flex: 1,
+  width: "90%",
+  margin: "0 auto",
 };
 
 const addButtonStyle = {
   position: "relative",
-  left: "46%",
-  margin: "10px",
+  left: "43%",
+  
+ 
+margin: "10px",
   bottom: "10px",
 };
 
+const rootStyle = {
+  padding: "20px", // Menambahkan padding ke bagian bawah
+};
 export default function CustomizedTables() {
   const Delete = async (id) => {
     Swal.fire({
@@ -121,7 +130,7 @@ export default function CustomizedTables() {
   }, []);
 
   return (
-    <div style={{ position: "relative" }}>
+    <box sx={rootStyle} >
       <Link to="/TambahData" style={addButtonStyle}>
         <Button variant="contained" color="primary">
           <Tambah />
@@ -181,6 +190,6 @@ export default function CustomizedTables() {
           </TableBody>
         </Table>
       </TableContainer>
-    </div>
+    </box>
   );
 }
